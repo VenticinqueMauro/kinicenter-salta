@@ -1,0 +1,48 @@
+# Robots.txt para KineCenter Salta
+# https://kinecentersalta.com/robots.txt
+
+# Permitir acceso a todos los bots
+User-agent: *
+Allow: /
+
+# Páginas y recursos importantes
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+Allow: /images/
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+Allow: /*.webp
+
+# Disallow (por si se agregan en el futuro)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+
+# Sitemap location
+Sitemap: https://kinecentersalta.com/sitemap.xml
+
+# Crawl-delay para bots específicos (opcional)
+User-agent: Googlebot
+Crawl-delay: 0
+
+User-agent: Bingbot
+Crawl-delay: 0
+
+# Permitir acceso a Google Images
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Social Media Crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /

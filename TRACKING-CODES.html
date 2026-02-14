@@ -1,0 +1,327 @@
+<!--
+================================================================================
+CÓDIGOS DE TRACKING PARA KINECENTERSALTA.COM
+================================================================================
+
+INSTRUCCIONES:
+1. Crea una cuenta en Google Analytics 4
+2. Crea una cuenta en Google Tag Manager (opcional pero recomendado)
+3. Reemplaza los ID de ejemplo con tus IDs reales
+4. Copia el código correspondiente y pégalo en index.html
+
+================================================================================
+-->
+
+
+<!-- ============================================== -->
+<!-- 1. GOOGLE ANALYTICS 4 (GA4) -->
+<!-- ============================================== -->
+<!--
+Ubicación: Pegar ANTES del cierre de </head> en index.html
+Reemplazar: G-XXXXXXXXXX con tu ID real de Google Analytics
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XXXXXXXXXX', {
+    'cookie_flags': 'SameSite=None;Secure',
+    'anonymize_ip': true,
+    'allow_google_signals': true,
+    'allow_ad_personalization_signals': false
+  });
+</script>
+
+
+<!-- ============================================== -->
+<!-- 2. GOOGLE TAG MANAGER (GTM) - RECOMENDADO -->
+<!-- ============================================== -->
+<!--
+Ventaja: Gestionar todos los tags desde una interfaz sin editar código
+Reemplazar: GTM-XXXXXXX con tu ID de Google Tag Manager
+-->
+
+<!-- Google Tag Manager - HEAD -->
+<!-- Ubicación: Pegar JUSTO DESPUÉS de la etiqueta <head> -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager - BODY -->
+<!-- Ubicación: Pegar JUSTO DESPUÉS de la etiqueta <body> -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- ============================================== -->
+<!-- 3. FACEBOOK PIXEL (META PIXEL) -->
+<!-- ============================================== -->
+<!--
+Para retargeting en Facebook/Instagram Ads
+Ubicación: Pegar ANTES del cierre de </head>
+Reemplazar: XXXXXXXXXXXXXXX con tu Pixel ID
+-->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'XXXXXXXXXXXXXXX');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXX&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+<!-- ============================================== -->
+<!-- 4. GOOGLE ADS CONVERSION TRACKING -->
+<!-- ============================================== -->
+<!--
+Para medir conversiones de Google Ads
+Ubicación: Pegar ANTES del cierre de </head>
+Reemplazar: AW-XXXXXXXXX con tu ID de conversión
+-->
+
+<!-- Google Ads Conversion Tracking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXXXX');
+</script>
+
+
+<!-- ============================================== -->
+<!-- 5. HOTJAR - HEATMAPS Y GRABACIÓN DE SESIONES -->
+<!-- ============================================== -->
+<!--
+Para ver cómo los usuarios interactúan con el sitio
+Ubicación: Pegar ANTES del cierre de </head>
+Reemplazar: XXXXXXX con tu Site ID de Hotjar
+-->
+
+<!-- Hotjar Tracking Code -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:XXXXXXX,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+<!-- ============================================== -->
+<!-- 6. MICROSOFT CLARITY - ALTERNATIVA GRATUITA A HOTJAR -->
+<!-- ============================================== -->
+<!--
+Mapas de calor y grabaciones GRATIS
+Ubicación: Pegar ANTES del cierre de </head>
+Reemplazar: XXXXXXXXXX con tu Project ID
+-->
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "XXXXXXXXXX");
+</script>
+
+
+<!-- ============================================== -->
+<!-- 7. EVENTOS PERSONALIZADOS PARA GA4 -->
+<!-- ============================================== -->
+<!--
+Código JavaScript para trackear eventos importantes
+Ubicación: Agregar al final de script.js
+-->
+
+<script>
+// Trackear clics en WhatsApp
+document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+    link.addEventListener('click', () => {
+        gtag('event', 'whatsapp_click', {
+            'event_category': 'engagement',
+            'event_label': 'WhatsApp Button',
+            'value': 1
+        });
+    });
+});
+
+// Trackear clics en teléfono
+document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', () => {
+        gtag('event', 'phone_call', {
+            'event_category': 'engagement',
+            'event_label': 'Phone Number',
+            'value': 1
+        });
+    });
+});
+
+// Trackear navegación a secciones
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function() {
+        const section = this.getAttribute('href').replace('#', '');
+        gtag('event', 'section_view', {
+            'event_category': 'navigation',
+            'event_label': section,
+            'value': 1
+        });
+    });
+});
+
+// Trackear tiempo en página (5 minutos)
+setTimeout(() => {
+    gtag('event', 'time_on_page', {
+        'event_category': 'engagement',
+        'event_label': '5_minutes',
+        'value': 5
+    });
+}, 300000);
+
+// Trackear scroll profundo (80%)
+let scrollTracked = false;
+window.addEventListener('scroll', () => {
+    if (scrollTracked) return;
+
+    const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+
+    if (scrollPercent > 80) {
+        gtag('event', 'deep_scroll', {
+            'event_category': 'engagement',
+            'event_label': '80_percent',
+            'value': 80
+        });
+        scrollTracked = true;
+    }
+});
+</script>
+
+
+<!-- ============================================== -->
+<!-- 8. SCHEMA.ORG ADICIONAL - FAQS (PARA BLOG FUTURO) -->
+<!-- ============================================== -->
+<!--
+Ejemplo de schema FAQ para aparecer en rich snippets
+Ubicación: Agregar en páginas de blog o FAQ
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "¿Qué es HIFU y para qué sirve?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HIFU (Ultrasonido Focalizado de Alta Intensidad) es un tratamiento no invasivo para lifting facial y corporal que estimula la producción de colágeno mediante ondas de ultrasonido focalizadas. En KineCenter Salta ofrecemos HIFU 25D Max para rejuvenecimiento facial, reducción de flacidez y lifting sin cirugía."
+    }
+  },{
+    "@type": "Question",
+    "name": "¿Cuánto dura una sesión de criolipólisis?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Una sesión de criolipólisis en KineCenter Salta tiene una duración aproximada de 60 minutos por zona tratada. Es un procedimiento no invasivo para eliminar grasa localizada mediante enfriamiento controlado."
+    }
+  },{
+    "@type": "Question",
+    "name": "¿Dónde está ubicado KineCenter Salta?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "KineCenter Salta está ubicado en Alsina 1238, Salta Capital. Contamos con tecnología de alta complejidad para rehabilitación y estética. Atención con turno previo llamando al 387 5224444."
+    }
+  }]
+}
+</script>
+
+
+<!-- ============================================== -->
+<!-- 9. COOKIE CONSENT (GDPR/RGPD) - OPCIONAL -->
+<!-- ============================================== -->
+<!--
+Para cumplir con leyes de privacidad
+Usar servicio como: cookiebot.com, osano.com, o cookie-script.com
+-->
+
+<!-- Ejemplo de Cookie Consent -->
+<!-- Se recomienda usar una solución profesional como Cookie Script -->
+
+
+<!-- ============================================== -->
+<!-- 10. INSTRUCCIONES FINALES -->
+<!-- ============================================== -->
+
+<!--
+PASOS PARA IMPLEMENTAR:
+
+1. CREAR CUENTAS:
+   ✅ Google Analytics 4: https://analytics.google.com
+   ✅ Google Tag Manager: https://tagmanager.google.com
+   ✅ Google Search Console: https://search.google.com/search-console
+   ✅ Meta Business Suite: https://business.facebook.com
+   ✅ Microsoft Clarity: https://clarity.microsoft.com (GRATIS)
+
+2. OBTENER IDs:
+   - GA4: G-XXXXXXXXXX
+   - GTM: GTM-XXXXXXX
+   - Facebook Pixel: XXXXXXXXXXXXXXX
+   - Google Ads: AW-XXXXXXXXX
+   - Clarity: XXXXXXXXXX
+
+3. REEMPLAZAR IDs EN CÓDIGOS DE ARRIBA
+
+4. PEGAR EN index.html:
+   - Códigos HEAD: antes de </head>
+   - Códigos BODY: después de <body>
+   - Eventos JS: al final de script.js
+
+5. VERIFICAR INSTALACIÓN:
+   - Google Tag Assistant (Chrome Extension)
+   - Facebook Pixel Helper (Chrome Extension)
+   - Google Analytics DebugView
+   - Clarity Dashboard
+
+6. CONFIGURAR OBJETIVOS/CONVERSIONES:
+   En GA4:
+   - Clic en WhatsApp
+   - Llamada telefónica
+   - Scroll profundo
+   - Tiempo en sitio > 2min
+   - Visita a sección Tecnología
+   - Visita a sección Servicios
+
+7. TESTING:
+   ✅ Probar cada evento manualmente
+   ✅ Verificar en tiempo real en GA4
+   ✅ Comprobar datos en 24-48 horas
+
+IMPORTANTE:
+- NO publicar códigos con IDs de ejemplo
+- Reemplazar TODOS los placeholders
+- Verificar privacidad y consentimiento
+- Actualizar política de privacidad del sitio
+
+-->
