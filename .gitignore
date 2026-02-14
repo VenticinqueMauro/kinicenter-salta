@@ -15,3 +15,14 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Vercel
+.vercel/
+
+# Docs (no deploy)
+CHECKLIST-IMPLEMENTACION.md
+CONTENIDO-BLOG-SEO.md
+GENERAR-IMAGENES.md
+GUIA-IMPLEMENTACION-IMAGENES.md
+SEO-GUIA.md
+TRACKING-CODES.html
