@@ -4,7 +4,7 @@
 
     <!-- Página Principal -->
     <url>
-        <loc>https://kinecentersalta.com/</loc>
+        <loc>https://kinicenter-salta.vercel.app/</loc>
         <lastmod>2026-02-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -12,7 +12,7 @@
 
     <!-- Sección Nosotros -->
     <url>
-        <loc>https://kinecentersalta.com/#nosotros</loc>
+        <loc>https://kinicenter-salta.vercel.app/#nosotros</loc>
         <lastmod>2026-02-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -20,7 +20,7 @@
 
     <!-- Sección Tecnología -->
     <url>
-        <loc>https://kinecentersalta.com/#tecnologia</loc>
+        <loc>https://kinicenter-salta.vercel.app/#tecnologia</loc>
         <lastmod>2026-02-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -28,7 +28,7 @@
 
     <!-- Sección Servicios -->
     <url>
-        <loc>https://kinecentersalta.com/#servicios</loc>
+        <loc>https://kinicenter-salta.vercel.app/#servicios</loc>
         <lastmod>2026-02-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -36,7 +36,7 @@
 
     <!-- Sección Equipos -->
     <url>
-        <loc>https://kinecentersalta.com/#equipos</loc>
+        <loc>https://kinicenter-salta.vercel.app/#equipos</loc>
         <lastmod>2026-02-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

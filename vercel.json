@@ -45,9 +45,9 @@
     {
       "source": "/:path(.*)",
       "has": [
-        { "type": "host", "value": "www.kinecentersalta.com" }
+        { "type": "host", "value": "www.kinicenter-salta.vercel.app" }
       ],
-      "destination": "https://kinecentersalta.com/:path",
+      "destination": "https://kinicenter-salta.vercel.app/:path",
       "permanent": true
     }
   ],

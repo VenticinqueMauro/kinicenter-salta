@@ -1,5 +1,5 @@
 # Robots.txt para KineCenter Salta
-# https://kinecentersalta.com/robots.txt
+# https://kinicenter-salta.vercel.app/robots.txt
 
 # Permitir acceso a todos los bots
 User-agent: *
@@ -21,7 +21,7 @@ Disallow: /private/
 Disallow: /*.pdf$
 
 # Sitemap location
-Sitemap: https://kinecentersalta.com/sitemap.xml
+Sitemap: https://kinicenter-salta.vercel.app/sitemap.xml
 
 # Crawl-delay para bots específicos (opcional)
 User-agent: Googlebot
