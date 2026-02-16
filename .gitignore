@@ -1,3 +1,7 @@
+# Node
+node_modules
+yarn-error.log
+
 # PDFs
 *.pdf
 
@@ -26,3 +30,6 @@ GENERAR-IMAGENES.md
 GUIA-IMPLEMENTACION-IMAGENES.md
 SEO-GUIA.md
 TRACKING-CODES.html
+
+# Claude Code local settings
+.claude/settings.local.json
